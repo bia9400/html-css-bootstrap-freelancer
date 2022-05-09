@@ -233,3 +233,46 @@ footer h6 a {
     color: #1ABC9C;
     text-decoration: none
 }
+.stylization-3d{
+    position: relative;
+    perspective: 600px;
+    perspective-origin: 50% calc(50% - 150px);
+    min-height: 800px;
+}
+.preserve-3d{
+    transform-style: preserve-3d;
+}
+.card-animation-class-3d-center{
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-animation-class:focus {
+    animation: cardAnimation-active 0.5s linear;
+    animation-delay: .1s;
+    
+}
+.card-animation-class:focus .card-animation-class-3d-center
+
+{
+    display: block;
+    animation:cardDelay 0.4s linear ;
+    
+} 
+
+@keyframes cardAnimation-active {
+    0% {
+        position: absolute;
+        width: 400px;
+        transform: translateZ(0px) translateX(0px) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translateZ(150px) translateX(250px) rotateZ(360deg) ;
+        position: absolute;
+        width: 600px;
+    }
+}
