@@ -1,6 +1,11 @@
 header{
     background-color: #2C3E50; color:white; 
 }
+form{
+    max-width: 80% ;
+    margin: auto;
+}
+.form-button{background-color: #1ABC9C; border: none;}
 .header-title{font-size: 1.2rem;font-weight:bold;}
 
 
@@ -11,10 +16,22 @@ header{
 
 .animated-links a {color: white; font-weight: bold; }
 
+.section-white{background-color: white;}
+.section-green{background-color:#1ABC9C;}
 
-
-
-
+.section-green img{
+    width:250px ;
+}
+.section-green h1{color: white ;font-weight:bold;}
+.section-green h2{color: white;}
+.section-green p{max-width: 80%; margin:auto; color: white;}
+.bar{max-width:110px;}
+.bar-blue{
+    max-width:110px; height: 4px; background-color: #2C3E50; border-radius: 4px;
+}
+.col-img-mine{max-width: 100%; border-radius: 10px;}
+.fa-star{color: white;}
+.my-button{width:150px; color:white;font-weight:bold; border-color:white;border-radius:8px;}
 .header-animation{
     z-index: 500;
     position: absolute;
@@ -87,3 +104,7 @@ header{
 #linkedin-icon:hover i{
     color: #2867B2; font-size: 1.2rem;
 }
+.section-light-color{background-color: #3A546D; color: white;}
+.section-dark{background-color: #2C3E50; color: white;}
+.section-light-color>div{min-width: 500px;}
+footer h6 a{color:#1ABC9C;text-decoration:none}
