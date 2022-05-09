@@ -1,0 +1,46 @@
+.header-animation{
+    z-index: 500;
+    position: absolute;
+    width: 190%;
+    min-height: 100px;
+    display: none;
+    background-color: #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.header-animation-reverse{
+    position: absolute;
+    width: 190%;
+    min-height: 100px;
+    transform: translateX(-50%) ;
+    display: none;
+    background-color: #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.header-animation ul,
+.header-animation-reverse ul{
+    text-decoration: none;
+    list-style:none;
+}
+.header-animation a,
+.header-animation-reverse a{
+    text-decoration: none;
+    color: #D15322;
+}
+
+.animated-links:hover .header-animation{
+    display: block;
+    animation: headerAnimation .5s ease-in;
+}
+.animated-links:hover .header-animation-reverse{
+    display: block;
+    animation: headerAnimation .5s ;
+}
+@keyframes headerAnimation {
+    0%{height: 0;width: 0;font-size: 0;animation-timing-function: ease-in;}
+    49.9%{ font-size: 0rem;}
+    50%{min-height: 100px; width: 190%;animation-timing-function: ease-out;}
+    80%{min-height: 50px; width: 190%; font-size: 1rem; animation-timing-function: ease-out;}
+    100%{min-height: 100px; width: 190%; font-size: 1rem;}
+}
