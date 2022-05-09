@@ -1,39 +1,102 @@
-header{
-    background-color: #2C3E50; color:white; 
+header {
+    background-color: #2C3E50;
+    color: white;
 }
-form{
-    max-width: 80% ;
+
+form {
+    max-width: 80%;
     margin: auto;
 }
-.form-button{background-color: #1ABC9C; border: none;}
-.header-title{font-size: 1.2rem;font-weight:bold;}
 
-
-
-.hamburger{font-size: 1.2rem; padding: .3rem .5rem; border:1px solid white ; color: white;}
-
-.animated-links a {color: white; font-weight: bold; }
-
-.animated-links a {color: white; font-weight: bold; }
-
-.section-white{background-color: white;}
-.section-green{background-color:#1ABC9C;}
-
-.section-green img{
-    width:250px ;
+.form-button {
+    background-color: #1ABC9C;
+    border: none;
 }
-.section-green h1{color: white ;font-weight:bold;}
-.section-green h2{color: white;}
-.section-green p{max-width: 80%; margin:auto; color: white;}
-.bar{max-width:110px;}
-.bar-blue{
-    max-width:110px; height: 4px; background-color: #2C3E50; border-radius: 4px;
+
+.header-title {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-.col-img-mine{max-width: 100%; border-radius: 10px;}
-.fa-star{color: white;}
-.section-white .fa-star{color: #2C3E50;}
-.my-button{width:150px; color:white;font-weight:bold; border-color:white;border-radius:8px;}
-.header-animation{
+
+
+
+.hamburger {
+    font-size: 1.2rem;
+    padding: .3rem .5rem;
+    border: 1px solid white;
+    color: white;
+}
+
+.animated-links a {
+    color: white;
+    font-weight: bold;
+}
+
+.animated-links a {
+    color: white;
+    font-weight: bold;
+}
+
+.section-white {
+    background-color: white;
+}
+
+.section-green {
+    background-color: #1ABC9C;
+}
+
+.section-green img {
+    width: 250px;
+}
+
+.section-green h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.section-green h2 {
+    color: white;
+}
+
+.section-green p {
+    max-width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.bar {
+    max-width: 110px;
+}
+
+.bar-blue {
+    max-width: 110px;
+    height: 4px;
+    background-color: #2C3E50;
+    border-radius: 4px;
+}
+
+.col-img-mine {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.fa-star {
+    color: white;
+}
+
+.section-white .fa-star {
+    color: #2C3E50;
+}
+
+.my-button {
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.header-animation {
     z-index: 500;
     position: absolute;
     width: 190%;
@@ -43,69 +106,129 @@ form{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.header-animation-reverse{
+
+.header-animation-reverse {
     position: absolute;
     width: 190%;
     min-height: 100px;
-    transform: translateX(-50%) ;
+    transform: translateX(-50%);
     display: none;
     background-color: #2C3E50;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 .header-animation ul,
-.header-animation-reverse ul{
+.header-animation-reverse ul {
     text-decoration: none;
-    list-style:none;
+    list-style: none;
 }
+
 .header-animation a,
-.header-animation-reverse a{
+.header-animation-reverse a {
     font-size: .8rem;
     text-decoration: none;
     color: #D15322;
 }
 
-.animated-links:hover .header-animation{
+.animated-links:hover .header-animation {
     display: block;
-    animation: headerAnimation .4s ;
-}
-.animated-links:hover .header-animation-reverse{
-    display: block;
-    animation: headerAnimation .4s ;
-}
-@keyframes headerAnimation {
-    0%{height: 0;width: 0;font-size: 0;animation-timing-function: ease-in;background-color: white}
-    49.9%{ font-size: 0rem;}
-    50%{min-height: 100px; width: 190%;animation-timing-function: ease-out; }
-    80%{min-height: 50px; width: 190%; font-size: 1rem; animation-timing-function: ease-out;}
-    100%{min-height: 100px; width: 190%; font-size: 1rem;}
+    animation: headerAnimation .4s;
 }
 
-.card-animation-class:hover img{
-    animation: cardAnimation-hover .1s linear ;
-    
+.animated-links:hover .header-animation-reverse {
+    display: block;
+    animation: headerAnimation .4s;
 }
-.btn:hover{
-    animation: cardAnimation-hover .1s linear ;
+
+@keyframes headerAnimation {
+    0% {
+        height: 0;
+        width: 0;
+        font-size: 0;
+        animation-timing-function: ease-in;
+        background-color: white
+    }
+
+    49.9% {
+        font-size: 0rem;
+    }
+
+    50% {
+        min-height: 100px;
+        width: 190%;
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        min-height: 50px;
+        width: 190%;
+        font-size: 1rem;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        min-height: 100px;
+        width: 190%;
+        font-size: 1rem;
+    }
+}
+
+.card-animation-class:hover img {
+    animation: cardAnimation-hover .1s linear;
+
+}
+
+.btn:hover {
+    animation: cardAnimation-hover .1s linear;
     animation-iteration-count: 2;
 }
+
 @keyframes cardAnimation-hover {
-    0%{transform: rotateY(-20deg) rotateX(-20deg);}
-    100%{transform: rotateY(20deg) rotateX(-20deg);}
+    0% {
+        transform: rotateY(-20deg) rotateX(-20deg);
+    }
+
+    100% {
+        transform: rotateY(20deg) rotateX(-20deg);
+    }
 }
-#facebook-icon:hover i{
-    color: #1877F2; font-size: 1.2rem;
+
+#facebook-icon:hover i {
+    color: #1877F2;
+    font-size: 1.2rem;
 }
-#google-icon:hover i{
-    color: #EA4335; font-size: 1.2rem;
+
+#google-icon:hover i {
+    color: #EA4335;
+    font-size: 1.2rem;
 }
-#twitter-icon:hover i{
-    color: #1DA1F2; font-size: 1.2rem;
+
+#twitter-icon:hover i {
+    color: #1DA1F2;
+    font-size: 1.2rem;
 }
-#linkedin-icon:hover i{
-    color: #2867B2; font-size: 1.2rem;
+
+#linkedin-icon:hover i {
+    color: #2867B2;
+    font-size: 1.2rem;
 }
-.section-light-color{background-color: #3A546D; color: white;}
-.section-dark{background-color: #2C3E50; color: white;}
-.section-light-color>div{min-width: 500px;}
-footer h6 a{color:#1ABC9C;text-decoration:none}
+
+.section-light-color {
+    background-color: #3A546D;
+    color: white;
+}
+
+.section-dark {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.section-light-color>div {
+    min-width: 500px;
+}
+
+footer h6 a {
+    color: #1ABC9C;
+    text-decoration: none
+}
