@@ -128,17 +128,17 @@ form {
 .header-animation-reverse a {
     
     text-decoration: none;
-    color: #D15322;
+    color: #ffffff;
 }
 
 .animated-links:hover .header-animation {
     display: block;
-    animation: headerAnimation .4s;
+    animation: headerAnimation .6s;
 }
 
 .animated-links:hover .header-animation-reverse {
     display: block;
-    animation: headerAnimation .4s;
+    animation: headerAnimation .6s;
 }
 
 @keyframes headerAnimation {
@@ -147,30 +147,31 @@ form {
         width: 0;
         font-size: 0;
         animation-timing-function: ease-in;
-        background-color: rgba(255, 255, 255, 0.034)
+        color: black;
+        transform: rotateY(0deg)translateX(-100px);
     }
 
-    49.9% {
-        font-size: 0rem;
-    }
 
-    50% {
-        min-height: 100px;
+    65% {
+        font-size: 0;
+        min-height: 160px;
         width: 190%;
         animation-timing-function: ease-out;
     }
 
-    80% {
-        min-height: 50px;
-        width: 190%;
+    80%{
         font-size: 0rem;
-        animation-timing-function: ease-out;
+        min-height: 70px;
+        width: 190%;
+        animation-timing-function: ease-in;
     }
 
+    
     100% {
-        min-height: 100px;
+        min-height: 160px;
         width: 190%;
         font-size: .8rem;
+        transform: rotateY(-360deg)translateX(-50px);
     }
 }
 
