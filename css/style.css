@@ -45,7 +45,7 @@
     100%{min-height: 100px; width: 190%; font-size: 1rem;}
 }
 
-div .card-animation-class:hover{
+.card-animation-class:hover img{
     animation: cardAnimation-hover .1s linear ;
     
 }
