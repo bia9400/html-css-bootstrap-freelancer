@@ -126,7 +126,7 @@ form {
 
 .header-animation a,
 .header-animation-reverse a {
-    font-size: .8rem;
+    
     text-decoration: none;
     color: #D15322;
 }
@@ -147,7 +147,7 @@ form {
         width: 0;
         font-size: 0;
         animation-timing-function: ease-in;
-        background-color: white
+        background-color: rgba(255, 255, 255, 0.034)
     }
 
     49.9% {
@@ -163,14 +163,14 @@ form {
     80% {
         min-height: 50px;
         width: 190%;
-        font-size: 1rem;
+        font-size: 0rem;
         animation-timing-function: ease-out;
     }
 
     100% {
         min-height: 100px;
         width: 190%;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }
 
