@@ -31,6 +31,7 @@ form{
 }
 .col-img-mine{max-width: 100%; border-radius: 10px;}
 .fa-star{color: white;}
+.section-white .fa-star{color: #2C3E50;}
 .my-button{width:150px; color:white;font-weight:bold; border-color:white;border-radius:8px;}
 .header-animation{
     z-index: 500;
