@@ -44,3 +44,13 @@
     80%{min-height: 50px; width: 190%; font-size: 1rem; animation-timing-function: ease-out;}
     100%{min-height: 100px; width: 190%; font-size: 1rem;}
 }
+
+div .card-animation-class:hover{
+    animation: cardAnimation-hover .1s linear ;
+    
+}
+
+@keyframes cardAnimation-hover {
+    0%{transform: rotateY(-20deg) rotateX(-20deg);}
+    100%{transform: rotateY(20deg) rotateX(-20deg);}
+}
